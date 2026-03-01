@@ -313,3 +313,20 @@ body.light-mode .theme-toggle .moon {
 body.light-mode .theme-toggle {
   background: #333;
 }
+/* ===== FIX BUTTON SPACING ===== */
+
+.card-buttons {
+    display: flex;
+    gap: 15px;          /* space between buttons */
+    margin-top: 20px;   /* space from description */
+}
+
+.package-card .card-buttons {
+    margin-top: 25px;   /* more space in packages */
+}
+
+/* make buttons same width & aligned */
+.card-buttons .btn {
+    flex: 1;
+    text-align: center;
+}

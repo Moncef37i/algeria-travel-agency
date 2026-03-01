@@ -11,6 +11,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
 </head>
 
 <body>
@@ -19,21 +20,19 @@
 <div class="logo">Algeria Luxury Travel</div>
 
 <nav>
-
 <ul>
-<li><a href="index.html" data-key="home">Home</a></li>
-<li><a href="destinations.html" data-key="destinations">Destinations</a></li>
-<li><a href="packages.html" data-key="packages">Packages</a></li>
-<li><a href="about.html" data-key="about">About</a></li>
-<li><a href="contact.html" data-key="contact">Contact</a></li>
+<li><a href="index.html" data-lang="home">Home</a></li>
+<li><a href="destinations.html" data-lang="destinations">Destinations</a></li>
+<li><a href="packages.html" data-lang="packages">Packages</a></li>
+<li><a href="about.html" data-lang="about">About</a></li>
+<li><a href="contact.html" data-lang="contact">Contact</a></li>
 </ul>
 </nav>
 
 <div class="controls">
 <div class="lang-switch">
-<button onclick="changeLang('en')">EN</button>
-<button onclick="changeLang('fr')">FR</button>
-
+<button onclick="changeLanguage('en')">EN</button>
+<button onclick="changeLanguage('fr')">FR</button>
 </div>
 
 <button class="theme-toggle" onclick="toggleTheme()">
@@ -41,19 +40,18 @@
   <span class="moon">🌙</span>
 </button>
 </div>
-
 </header>
 
 <!-- HERO SECTION -->
 <section class="hero">
-<h1 data-key="heroTitle">Luxury Travel Across Algeria</h1>
-<p data-key="heroText">Experience premium tours across the Sahara and Mediterranean coast.</p>
-<a href="packages.html" class="btn" data-key="book">Book Now</a>
+<h1 data-lang="heroTitle">Luxury Travel Across Algeria</h1>
+<p data-lang="heroText">Experience premium tours across the Sahara and Mediterranean coast.</p>
+<a href="packages.html" class="btn" data-lang="bookNow">Book Now</a>
 </section>
 
 <!-- TESTIMONIALS -->
 <section class="section">
-<h2 data-key="testimonials">What Our Clients Say</h2>
+<h2 data-lang="testimonials">What Our Clients Say</h2>
 
 <div class="cards">
 
@@ -181,14 +179,12 @@
 </section>
 
 <footer>
-<p>© 2026 Algeria Travel Agency - All Rights Reserved</p>
+<p>© 2026 Algeria Luxury Travel Agency - All Rights Reserved</p>
 </footer>
 
 <a href="https://wa.me/213673940984" class="whatsapp" target="_blank">
 <img src="images/whatsapp.png.png" alt="WhatsApp">
 </a>
-
-<script src="script.js"></script>
 
 </body>
 </html>

@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Destinations | Algeria Luxury Travel</title>
-<meta name="description" content="Explore Algeria's top destinations including Oran, Algiers, Constantine, Sahara and more.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -15,34 +14,33 @@
 <body>
 
 <header>
-  <div class="logo">Algeria Luxury Travel</div>
+<div class="logo">Algeria Luxury Travel</div>
 
-  <nav>
+<nav>
+<ul>
+<li><a href="index.html" data-lang="home">Home</a></li>
+<li><a href="destinations.html" data-lang="destinations">Destinations</a></li>
+<li><a href="packages.html" data-lang="packages">Packages</a></li>
+<li><a href="about.html" data-lang="about">About</a></li>
+<li><a href="contact.html" data-lang="contact">Contact</a></li>
+</ul>
+</nav>
 
-    <ul>
-      <li><a href="index.html" data-lang="home">Home</a></li>
-      <li><a href="destinations.html" data-lang="destinations">Destinations</a></li>
-      <li><a href="packages.html" data-lang="packages">Packages</a></li>
-      <li><a href="about.html" data-lang="about">About</a></li>
-      <li><a href="contact.html" data-lang="contact">Contact</a></li>
-    </ul>
-  </nav>
+<div class="controls">
+<div class="lang-switch">
+<button onclick="changeLanguage('en')">EN</button>
+<button onclick="changeLanguage('fr')">FR</button>
+</div>
 
-  <div class="controls">
-    <div class="lang-switch">
-      <button onclick="changeLanguage('en')">EN</button>
-      <button onclick="changeLanguage('fr')">FR</button>
- 
-    </div>
- <button class="theme-toggle" onclick="toggleTheme()">
-  <span class="sun">☀</span>
-  <span class="moon">🌙</span>
+<button class="theme-toggle" onclick="toggleTheme()">
+<span class="sun">☀</span>
+<span class="moon">🌙</span>
 </button>
-  </div>
+</div>
 </header>
 
 <section class="section" style="margin-top:120px;">
-<h2>Explore Algeria</h2>
+<h2 data-lang="exploreTitle">Explore Algeria's Top Destinations</h2>
 
 <div class="cards">
 
@@ -50,64 +48,96 @@
 <div class="card">
 <img src="images/oran.jpg" alt="Oran">
 <h3>Oran</h3>
-<p>The Mediterranean pearl of Algeria. Beaches, nightlife, luxury resorts and historic Santa Cruz fortress.</p>
-<a href="packages.html" class="btn">View Packages</a>
+<p data-lang="oranDesc">Mediterranean beaches, vibrant nightlife and luxury seaside resorts.</p>
+
+<div class="card-buttons">
+<a href="packages.html" class="btn" data-lang="viewPackages">View Packages</a>
+<a href="contact.html" class="btn gold-btn" data-lang="bookNow">Book Now</a>
+</div>
 </div>
 
 <!-- ALGIERS -->
 <div class="card">
 <img src="images/algiers.jpg" alt="Algiers">
 <h3>Algiers</h3>
-<p>The white capital overlooking the sea. Discover Casbah, colonial architecture and premium hotels.</p>
-<a href="packages.html" class="btn">View Packages</a>
+<p data-lang="algiersDesc">The White Capital with historic Casbah and premium city experiences.</p>
+
+<div class="card-buttons">
+<a href="packages.html" class="btn" data-lang="viewPackages">View Packages</a>
+<a href="contact.html" class="btn gold-btn" data-lang="bookNow">Book Now</a>
+</div>
 </div>
 
 <!-- CONSTANTINE -->
 <div class="card">
 <img src="images/constantine.jpg" alt="Constantine">
 <h3>Constantine</h3>
-<p>The city of bridges. Dramatic cliffs, history, and breathtaking skyline views.</p>
-<a href="packages.html" class="btn">View Packages</a>
+<p data-lang="constantineDesc">City of bridges offering dramatic cliffs and unforgettable views.</p>
+
+<div class="card-buttons">
+<a href="packages.html" class="btn" data-lang="viewPackages">View Packages</a>
+<a href="contact.html" class="btn gold-btn" data-lang="bookNow">Book Now</a>
+</div>
 </div>
 
 <!-- ANNABA -->
 <div class="card">
 <img src="images/annaba.jpg" alt="Annaba">
 <h3>Annaba</h3>
-<p>Crystal clear beaches and Roman ruins with relaxing seaside luxury stays.</p>
-<a href="packages.html" class="btn">View Packages</a>
+<p data-lang="annabaDesc">Crystal-clear beaches combined with Roman history and elegance.</p>
+
+<div class="card-buttons">
+<a href="packages.html" class="btn" data-lang="viewPackages">View Packages</a>
+<a href="contact.html" class="btn gold-btn" data-lang="bookNow">Book Now</a>
+</div>
 </div>
 
 <!-- TLEMCEN -->
 <div class="card">
 <img src="images/tlemcen.jpg" alt="Tlemcen">
 <h3>Tlemcen</h3>
-<p>Andalusian architecture, waterfalls and rich cultural heritage in western Algeria.</p>
-<a href="packages.html" class="btn">View Packages</a>
+<p data-lang="tlemcenDesc">Andalusian architecture, waterfalls and rich cultural heritage.</p>
+
+<div class="card-buttons">
+<a href="packages.html" class="btn" data-lang="viewPackages">View Packages</a>
+<a href="contact.html" class="btn gold-btn" data-lang="bookNow">Book Now</a>
+</div>
 </div>
 
 <!-- BEJAIA -->
 <div class="card">
 <img src="images/bejaia.jpg" alt="Bejaia">
 <h3>Bejaia</h3>
-<p>Mountains meet the sea. A perfect blend of adventure and coastal relaxation.</p>
-<a href="packages.html" class="btn">View Packages</a>
+<p data-lang="bejaiaDesc">Mountains meet the sea for adventure and relaxation.</p>
+
+<div class="card-buttons">
+<a href="packages.html" class="btn" data-lang="viewPackages">View Packages</a>
+<a href="contact.html" class="btn gold-btn" data-lang="bookNow">Book Now</a>
+</div>
 </div>
 
 <!-- GHARDAIA -->
 <div class="card">
 <img src="images/ghardaia.jpg" alt="Ghardaia">
 <h3>Ghardaia</h3>
-<p>Unique desert architecture and UNESCO heritage sites in the M'zab Valley.</p>
-<a href="packages.html" class="btn">View Packages</a>
+<p data-lang="ghardaiaDesc">Unique desert architecture and UNESCO heritage sites.</p>
+
+<div class="card-buttons">
+<a href="packages.html" class="btn" data-lang="viewPackages">View Packages</a>
+<a href="contact.html" class="btn gold-btn" data-lang="bookNow">Book Now</a>
+</div>
 </div>
 
 <!-- TAMANRASSET -->
 <div class="card">
 <img src="images/tamanrasset.jpg" alt="Tamanrasset">
 <h3>Tamanrasset</h3>
-<p>Deep Sahara luxury expeditions and breathtaking Hoggar mountain landscapes.</p>
-<a href="packages.html" class="btn">View Packages</a>
+<p data-lang="tamanrassetDesc">Deep Sahara luxury expeditions and breathtaking landscapes.</p>
+
+<div class="card-buttons">
+<a href="packages.html" class="btn" data-lang="viewPackages">View Packages</a>
+<a href="contact.html" class="btn gold-btn" data-lang="bookNow">Book Now</a>
+</div>
 </div>
 
 </div>
@@ -118,7 +148,7 @@
 </footer>
 
 <a href="https://wa.me/213673940984" class="whatsapp" target="_blank">
-<img src="images/whatsapp.png.png">
+<img src="images/whatsapp.png.png" alt="WhatsApp">
 </a>
 
 </body>
