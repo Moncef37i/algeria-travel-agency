@@ -15,53 +15,50 @@
 <body>
 
 <header>
-  <div class="logo">Algeria Luxury Travel</div>
+<div class="logo">Algeria Luxury Travel</div>
 
-  <nav>
+<nav>
+<ul>
+<li><a href="index.html" data-lang="home">Home</a></li>
+<li><a href="destinations.html" data-lang="destinations">Destinations</a></li>
+<li><a href="packages.html" data-lang="packages">Packages</a></li>
+<li><a href="about.html" data-lang="about">About</a></li>
+<li><a href="contact.html" data-lang="contact">Contact</a></li>
+</ul>
+</nav>
 
-    <ul>
-      <li><a href="index.html" data-lang="home">Home</a></li>
-      <li><a href="destinations.html" data-lang="destinations">Destinations</a></li>
-      <li><a href="packages.html" data-lang="packages">Packages</a></li>
-      <li><a href="about.html" data-lang="about">About</a></li>
-      <li><a href="contact.html" data-lang="contact">Contact</a></li>
-    </ul>
-  </nav>
+<div class="controls">
+<div class="lang-switch">
+<button onclick="changeLanguage('en')">EN</button>
+<button onclick="changeLanguage('fr')">FR</button>
+</div>
 
-  <div class="controls">
-    <div class="lang-switch">
-      <button onclick="changeLanguage('en')">EN</button>
-      <button onclick="changeLanguage('fr')">FR</button>
-
-    </div>
-  <button class="theme-toggle" onclick="toggleTheme()">
-  <span class="sun">☀</span>
-  <span class="moon">🌙</span>
+<button class="theme-toggle" onclick="toggleTheme()">
+<span class="sun">☀</span>
+<span class="moon">🌙</span>
 </button>
-  </div>
+</div>
 </header>
 
 <section class="contact-section" style="margin-top:120px;">
 
-<!-- MAP LEFT -->
 <div class="map">
 <iframe 
- src="https://www.google.com/maps/d/u/0/embed?mid=1c9g7H9AT0QR4rda18hFzEjWpDwPRFXE&ehbc=2E312F"
-  width="100%" 
-  height="400" 
-  style="border-radius:15px; border:1px solid #d4af37;">
+src="https://www.google.com/maps/d/u/0/embed?mid=1c9g7H9AT0QR4rda18hFzEjWpDwPRFXE&ehbc=2E312F"
+width="100%" 
+height="400" 
+style="border-radius:15px; border:1px solid #d4af37;">
 </iframe>
 </div>
 
-<!-- FORM RIGHT -->
 <div class="contact-form">
 <h2 data-lang="contactUs">Contact Us</h2>
 
 <form onsubmit="sendMessage(event)">
-<input type="text" placeholder="Full Name" required>
-<input type="email" placeholder="Email Address" required>
-<textarea rows="5" placeholder="Your Message" required></textarea>
-<button type="submit" data-lang="send">Send Message</button>
+<input type="text" data-lang-placeholder="namePlaceholder" placeholder="Full Name" required>
+<input type="email" data-lang-placeholder="emailPlaceholder" placeholder="Email Address" required>
+<textarea rows="5" data-lang-placeholder="messagePlaceholder" placeholder="Your Message" required></textarea>
+<button type="submit" data-lang="sendMessage">Send Message</button>
 </form>
 
 <br><br>
