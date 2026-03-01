@@ -31,7 +31,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  background: black;
+  background: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -228,7 +228,7 @@ nav ul li a:hover {
 
 /* ===== FOOTER ===== */
 footer {
-  background: black;
+  background: var(--bg-color);
   text-align: center;
   padding: 20px;
   border-top: 1px solid var(--gold);
@@ -329,4 +329,17 @@ body.light-mode .theme-toggle {
 .card-buttons .btn {
     flex: 1;
     text-align: center;
+}
+/* ===== FIX ABOUT DESCRIPTION SPACING ===== */
+
+.about-desc {
+  margin-bottom: 50px; /* pushes Mission section lower */
+}
+/* ===== HEADER LINKS COLOR IN LIGHT MODE ===== */
+body.light-mode header nav ul li a {
+  color: black; /* Dark text color for links in light mode */
+}
+
+body.light-mode header nav ul li a:hover {
+  color: var(--gold); /* Keep hover effect with gold */
 }
