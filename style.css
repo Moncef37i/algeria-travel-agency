@@ -234,7 +234,7 @@ footer {
   border-top: 1px solid var(--gold);
 }
 footer p {
-  color: white !important;
+  color: var(--text-color);
   font-weight: 500;
 }
 
